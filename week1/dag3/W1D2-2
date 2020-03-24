@@ -1,0 +1,12 @@
+// declaratie
+const makeBagelWith = function(filling) {
+  // - take bagel
+  // - put in oven
+  // - add topping
+
+  console.log("There you go, a sandwich with " + filling);
+};
+
+// call
+makeBagelWith("ham");
+makeBagelWith("creamcheese");

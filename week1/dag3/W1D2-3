@@ -1,0 +1,4 @@
+const calculateDiscountedPrice = function(totalAmount, discount) {
+  return Math.round(totalAmount - discount);
+};
+calculateDiscountedPrice(50, 2.5);
