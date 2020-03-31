@@ -10,11 +10,12 @@ const bodyColor = document.querySelector("body");
 // for (i = 0; i < menuLinks.length; i++) {
 //   menuLinks[i].className = "color-" + i;
 // }
-const menuLinks = document.querySelectorAll("li");
 
 menuLinks.forEach(function(item, index) {
   item.className = "color-" + index;
 });
+
+const menuLinks = document.querySelectorAll("li");
 
 const menuHome = document.querySelector(".color-0");
 const menuRed = document.querySelector(".color-1");
@@ -22,7 +23,7 @@ const menuBlue = document.querySelector(".color-2");
 const menuGreen = document.querySelector(".color-3");
 const menuYellow = document.querySelector(".color-4");
 const menuPurple = document.querySelector(".color-5");
-
+const menuOrangee = document.querySelector(".color-6");
 // // hieronder het uitgeklapte menu met lijst
 
 // functies
@@ -31,6 +32,13 @@ const toggleGrootMenu = function() {
 };
 
 // onderstaande klopt
+
+const newLi = document.createElement("li");
+const menuOrange = document
+  .getElementsByClassName("menu2")
+  .getElementbyTagName("ul")[0];
+
+menu.appendChild(newLI);
 
 const changeBackGround0 = function() {
   bodyColor.className = "color-0";
