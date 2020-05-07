@@ -1,0 +1,18 @@
+#mybutton {
+  border: 1px solid #9361bf;
+  background: #9361bf;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+#mybutton2 {
+  border: 1px blue;
+  background: red;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.bluebackground {
+  background-color: blue;
+}
+.redbackground {
+  background-color: red;
+}
