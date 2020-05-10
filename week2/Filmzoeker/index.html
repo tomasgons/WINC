@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" /> 
+    <title>Filmzoeker</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <header>
+    <h1><a href="index.html">Welkom bij de Winc Filmzoeker</a></h1>
+  </header>
+  <body>
+    <nav class="menu">
+        <ul class="buttons">
+          
+          <li><input type="radio" id="avengers" name = "moviefilter" value="avengers" >
+          <label for="Avengers">Movies with Avengers</label></li>
+          <li><input type="radio" id="x-Men"  name = "moviefilter"  value="x-men" >
+          <label for="X-Men" > Movies with X-Men </label></li>
+          <li><input type="radio" id="princess" name = "moviefilter" value="princess">
+          <label for="Princess"> Movies with Princess</label></li>
+          <li><input type="radio" id="batman" name = "moviefilter" value="batman">
+          <label for="Batman"> Movies with Batman</label></li> 
+          <li><input type="radio" id="newmovies" name ="moviefilter" value="newmovies">
+          <label for="newmovies">New Movies</label></li>
+          <li> 
+            
+              
+              <input type="text" placeholder="Zoek op naam" id="searchbar" name="searchbar"><br>
+     
+          </li>
+        </ul>
+        <nav id="main-nav">
+            <ul id="mainlist">
+
+            </ul>
+            
+        </nav>
+  </body>
+  <script defer src="database.js"></script>
+  <script defer src="script.js"></script>
+</html>
