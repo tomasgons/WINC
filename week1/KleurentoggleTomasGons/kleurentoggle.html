@@ -6,15 +6,16 @@
         
         <link rel="stylesheet" href="styles.css">
                 <title>Kleurentoggle</title>
-  <body>
-    
+  <body> 
+     
+    <nav class="mainwrap">
       <div class="wrapper">
           <div class="burger"><img width= "80" height="80" src="burger.png"></div>
       
           <nav class="menu">
           <ul>
             <li class ="grey"><input type="radio" id="grey" name="colors" value="grey">
-            <label for="home">HOME</label></li>
+            <label for="grey">HOME</label></li>
             <li class ="red"><input type="radio" id="red" name="colors" value="red">
                 <label for="red">RED</label></li>
             <li class ="blue"><input type="radio" id="blue" name="colors" value="blue">
@@ -27,9 +28,13 @@
                                 <label for="purple">PURPLE</label></li>
               
           </ul>
+          
           </nav>
+          
       </div>
-    
+      <div id="empty"></div>
+      <div id="colortext">grey</div>
+    </nav>
 
       <script defer src="script.js"></script>
   </body>
