@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Filmzoeker</title>
+    <!-- voor t zoekicoontje -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav id="container">
+      <header>
+        <h1>
+          <button class="imdb"><a href="index.html">WINc</a></button>
+          <span>Welkom bij de Winc filmzoeker</span>
+        </h1>
+      </header>
+
+      <nav class="menu">
+        <ul class="buttons">
+          <li>
+            <input
+              type="radio"
+              class="mainbuttons"
+              id="avengers"
+              name="moviefilter"
+              value="avengers"
+            />
+            <label id="Avengers" for="avengers">Films met Avengers</label>
+          </li>
+          <li>
+            <input type="radio" id="x-Men" name="moviefilter" value="x-men" />
+            <label id="X-men" for="x-Men">
+              Films met X-Men
+            </label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="princess"
+              name="moviefilter"
+              value="princess"
+            />
+            <label id="Princess" for="princess"> Films met Princess</label>
+          </li>
+          <li>
+            <input type="radio" id="batman" name="moviefilter" value="batman" />
+            <label id="Batman" for="batman"> Films met Batman</label>
+          </li>
+          <li>
+            <input
+              type="radio"
+              id="newmovies"
+              name="moviefilter"
+              value="newmovies"
+            />
+            <label id="Newmovies" for="newmovies">
+              Nieuwste Films, vanaf 2014</label
+            >
+          </li>
+          <li id="searchcontainer">
+            <input
+              type="text"
+              placeholder="Zoek op naam"
+              id="searchbar"
+              name="searchbar"
+            /><button class="submit" type="submit">
+              <i class="fa fa-search"></i></button
+            ><br />
+          </li>
+        </ul>
+      </nav>
+    </nav>
+    <nav id="main-nav">
+      <ul id="mainlist"></ul>
+    </nav>
+    <footer>
+      <button class="imdb"><a href="index.html">WINc</a></button><span> </span
+      ><input
+        type="radio"
+        id="random"
+        name="moviefilter"
+        value="random"
+      /><label for="random">Wat moet Ik nu Netflix 'n Chillen?</label>
+    </footer>
+  </body>
+  <script defer src="database.js"></script>
+  <script defer src="script.js"></script>
+</html>
