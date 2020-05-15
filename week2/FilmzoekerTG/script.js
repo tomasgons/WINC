@@ -71,12 +71,12 @@ document.querySelectorAll("input").forEach(btn => {
 });
 
 // turns input text to lowercase
-searchBar.addEventListener("input", e => {
-  e.target.value = e.target.value.toLowerCase();
-});
+// searchBar.addEventListener("input", e => {
+//   e.target.value = e.target.value.toLowerCase();
+// });
 
 // switch statement for textinputfield
-searchBar.addEventListener("key-up", event => {
+searchBar.addEventListener("in", event => {
   switch (event.target.value) {
     case "avengers":
       addMoviestoDom(filterMovies("avengers"));
