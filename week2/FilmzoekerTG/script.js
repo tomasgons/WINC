@@ -77,7 +77,7 @@ document.querySelectorAll("input").forEach(btn => {
 
 // switch statement for textinputfield
 searchBar.addEventListener("in", event => {
-  switch (event.target.value) {
+  switch (event.target.value.toLowerCase) {
     case "avengers":
       addMoviestoDom(filterMovies("avengers"));
       break;

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="randomPersonData.js"></script>
+    <script defer src="script.js"></script>
+    <title>Grotearrays</title>
+  </head>
+  <body>
+    <ul class="buttons">
+      <li>
+        <input
+          type="radio"
+          class="mainbuttons"
+          id="landen"
+          name="filter"
+          value="landen"
+        />
+        <label id="landlabel" for="landen">Landenlijst</label>
+      </li>
+      <li>
+        <input
+          type="radio"
+          class="mainbuttons"
+          id="females"
+          name="filter"
+          value="females"
+        />
+        <label id="femlabel" for="females">Steenbokvrouwen</label>
+      </li>
+      <li>
+        <input
+          type="radio"
+          class="mainbuttons"
+          id="cc"
+          name="filter"
+          value="cc"
+        />
+        <label id="cclabel" for="cc">Landenlijst</label>
+      </li>
+    </ul>
+    <div class="lists">
+      <ul class="regionlist"></ul>
+      <ul class="cclist"></ul>
+    </div>
+  </body>
+</html>
