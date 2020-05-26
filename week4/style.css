@@ -1,0 +1,74 @@
+body {
+  display: grid;
+  grid-template-areas:
+    " nav "
+    " container ";
+  max-width: 700px;
+  margin: auto;
+  justify-content: center;
+}
+nav {
+  display: grid;
+  grid-template-areas: "ul";
+}
+ul {
+  display: grid;
+  grid-template-columns: 50px;
+  grid-template-areas: "li li li li ";
+  padding: 0px;
+  grid-gap: 10px;
+  justify-content: start;
+
+  background-color: rgb(0, 238, 255);
+}
+
+li {
+  display: grid;
+
+  list-style: none;
+  padding: 5px;
+  border: px solid black;
+  border-color: black;
+}
+ul > .currentPage {
+  background-color: grey;
+}
+ul > .currentPage:hover {
+  background-color: pink;
+}
+li input {
+  outline: none;
+}
+li > input:hover {
+  border: 5px solid red;
+}
+.container {
+  display: grid;
+  max-width: 700px;
+  height: 500px;
+  margin-top: auto;
+  text-align: center;
+}
+
+a:link {
+  color: black;
+  font-size: 100px;
+}
+
+a:hover {
+  color: rgb(9, 140, 255);
+  font-weight: bold;
+}
+a:active {
+  color: yellow;
+  font-style: italic;
+}
+
+a:visited {
+  color: red;
+  font-style: italic;
+}
+input:focus {
+  color: green;
+  font-size: 20px;
+}

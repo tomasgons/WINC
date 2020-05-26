@@ -1,0 +1,44 @@
+body {
+  background: #231f20;
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Oswald";
+  font-weight: 700;
+  position: relative;
+  margin: 30px auto;
+  text-transform: uppercase;
+  width: 550px;
+}
+
+h1::before,
+h1::after {
+  background: #4a90e2;
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 20px;
+  width: 5px;
+}
+
+h1::before {
+  border-radius: 200px 0px 0px 200px;
+  border: 0px solid #000000;
+  height: 8px;
+  width: 5px;
+  padding: 10px;
+  top: 10px;
+  left: 15px;
+}
+
+h1::after {
+  border-radius: 0px 200px 200px 0px;
+  border: 0px solid #000000;
+  height: 8px;
+  width: 5px;
+  padding: 10px;
+  margin: 10px;
+  top: 0px;
+}
